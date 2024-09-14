@@ -192,18 +192,6 @@ a {
   width: 360px;
   margin-bottom: 0;
 }
-.background-img {
-  margin-bottom: 48px;
-}
-.container-second-row {
-  display: inherit;
-  flex-wrap: inherit;
-  align-items: center;
-  margin-left: auto;
-  row-gap: inherit;
-  gap: 24px;
-  margin-bottom: 0;
-}
 
 /*        for all sections       */
 .section {
