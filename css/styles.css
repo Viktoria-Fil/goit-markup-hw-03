@@ -195,9 +195,16 @@ a {
 .background-img {
   margin-bottom: 48px;
 }
-.background-img-second {
+.container-second-row {
+  display: inherit;
+  flex-wrap: inherit;
+  align-items: center;
+  margin-left: auto;
+  row-gap: inherit;
+  gap: 24px;
   margin-bottom: 0;
 }
+
 /*        for all sections       */
 .section {
   padding: 120px 0 120px 0;
