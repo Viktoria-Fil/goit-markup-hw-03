@@ -6,12 +6,41 @@ body {
 ul,
 ol {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 a {
   text-decoration: none;
 }
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 /* header */
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -21,30 +50,49 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+  padding-bottom: 16px;
 }
 
+.nav-list {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
 .nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .contacts-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -56,6 +104,7 @@ a {
 
 /* main */
 .hero-image {
+  padding: 188px 0;
   background: #2e2f42;
 }
 .hero-title {
@@ -64,6 +113,10 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
   font-family: inherit;
@@ -72,8 +125,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -83,6 +142,15 @@ a {
 .section {
   background: #f4f4fd;
 }
+.section-benefits {
+  padding: 120px 0;
+}
+.visually-hidden {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+.benefits-item {
+}
 .main-title {
   font-size: 36px;
   line-height: 1.11;
@@ -90,6 +158,12 @@ a {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  gap: calc(100%-72) / 4;
 }
 .title {
   font-weight: 500;
@@ -114,6 +188,10 @@ a {
   background-color: #2e2f42;
 }
 
+.footer-container {
+  display: block;
+  margin-left: auto;
+}
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
