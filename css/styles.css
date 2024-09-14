@@ -181,8 +181,8 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin-left: auto;
-  row-gap: 48px;
   gap: 24px;
+  row-gap: 48px;
 }
 .container-portfolio {
   border-bottom: 1px solid #e7e9fc;
