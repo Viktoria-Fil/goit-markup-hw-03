@@ -141,7 +141,9 @@ a {
 /*    section 1 (benefits)   */
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .benefits-item {
   width: calc((100%-72px) / 4);
@@ -167,9 +169,12 @@ a {
 
 /*     section 3 (portfolio)    */
 .portfolio-list {
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin-left: auto;
   row-gap: 48px;
+  gap: 24px;
 }
 .container-portfolio {
   border-bottom: 1px solid #e7e9fc;
@@ -178,6 +183,7 @@ a {
   padding: 32px 16px;
   width: 360px;
 }
+
 /*        for all sections       */
 .section {
   padding: 120px 0 120px 0;
